@@ -99,7 +99,7 @@ async def cmd_reg_four(message: Message, state: FSMContext):
         email=data['email']
     )
 
-    await message.answer("Дякуємо, реєстрація завершена!",  reply_markup=kb.payment_link_kb())
+    await message.answer("Дякуємо, реєстрація завершена!\nПосилання для оплати стікерів розташовано на кнопці нижче.\nПісля оплати ОБОВ'ЯЗКОВО скиньте скріншот з оплатою у цей чат",  reply_markup=kb.payment_link_kb())
 
     await state.clear()
 
